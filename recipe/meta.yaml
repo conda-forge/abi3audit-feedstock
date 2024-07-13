@@ -1,5 +1,5 @@
 {% set name = "abi3audit" %}
-{% set version = "0.0.11" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/abi3audit-{{ version }}.tar.gz
-  sha256: 8f527908e4c1e90218b9a62958ed4124c7edc1ec115dc5ee019f92e5752a10b7
+  sha256: fbf7651a3289942c93f09bf3edd7110a85eb621e2cf05dc3ddc86cc4cb29f7a2
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - abi3info >=2023.01.27
+    - abi3info >=2024.06.19
     - kaitaistruct >=0.10,<1.dev0
     - packaging >=21.3,<25.0
     - pefile >=2022.5.30
