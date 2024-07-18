@@ -1,5 +1,5 @@
 {% set name = "abi3audit" %}
-{% set version = "0.0.12" %}
+{% set version = "0.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/abi3audit-{{ version }}.tar.gz
-  sha256: fbf7651a3289942c93f09bf3edd7110a85eb621e2cf05dc3ddc86cc4cb29f7a2
+  sha256: 71c69bc30487bb698f72658ca06fd36c4aeb21f46e462e02238a17e1117537bd
 
 build:
   noarch: python
