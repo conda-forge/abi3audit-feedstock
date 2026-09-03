@@ -15,10 +15,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=18347&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/abi3audit-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/abi3audit-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/abi3audit-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -41,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `abi3audit` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install abi3audit
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install abi3audit
 ```
 
-It is possible to list all of the versions of `abi3audit` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add abi3audit
+# for installing globally
+pixi global install abi3audit
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `abi3audit` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search abi3audit --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search abi3audit --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search abi3audit --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -77,6 +120,8 @@ mamba repoquery whoneeds abi3audit --channel conda-forge
 # List dependencies of `abi3audit`:
 mamba repoquery depends abi3audit --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -147,7 +192,4 @@ Feedstock Maintainers
 
 * [@BastianZim](https://github.com/BastianZim/)
 * [@wshanks](https://github.com/wshanks/)
-
-
-<!-- dummy commit to enable rerendering -->
 
